@@ -1,0 +1,74 @@
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html,
+body {
+height:100%;
+width:100%;
+}
+.main{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+.left{
+  height: 100%;
+  width: 22%;
+  background-color: #282828;
+}
+.left form{
+  padding: 1vw 2vw;
+}
+.left form input{
+  padding: .5vw 1vw;
+  outline: none;
+}
+.left ul{
+  padding: 0 2vw;
+  list-style: none;
+}
+.left ul li a{
+  text-decoration: none;
+  color: white;
+}
+.left ul li{
+  padding: .4vw 0;
+}
+.right{
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 78%;
+  background-color: #3d3d3d;
+}
+.right form{
+  
+  height: 100%;
+  width: 100%;
+}
+.right form textarea{
+  padding:1vw;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border-top: none;
+  outline: none;
+}
+.right button{
+  position: absolute;
+  top:3%;
+  right: 3%;
+  border-radius: 5px;
+  padding: .5vw 1vw;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+#delete{
+  text-decoration: none;
+  margin-left: 2vw;
+  color: rgb(255, 255, 255);
+}

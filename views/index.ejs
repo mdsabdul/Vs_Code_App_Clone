@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>vscode</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="main">
+      <div class="left">
+        <form action="/create" method="post">
+          <input type="text" name="filename" placeholder="filename">
+        </form>
+        <ul>
+          <%files.forEach(function(file,index){ %>
+            <li><a href="/file/<%=file%>"><%=file%></a>
+              <a id="delete" href="/delete/<%=file%>"><i class="ri-delete-bin-6-line"></i></a>
+            </li>
+         <% })%>
+        
+        </ul>
+      </div>
+      <div class="right">
+       <form action="/update/<%=filename%>" method="post">
+        <textarea name="filedata"><%=filedata%></textarea>
+        <button>Save</button>
+       </form>
+      </div>
+    </div>
+  </body>
+</html>
